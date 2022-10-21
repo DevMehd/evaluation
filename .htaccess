@@ -1,0 +1,13 @@
+# HTID:14170949: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:14170949:
+
+ErrorDocument 404 /errors/404.php
+# ErrorDocument 401 "Désolé, notre script s'est crashé ; comme c'est dommage !"
+
+Options +FollowSymlinks -MultiViews
+RewriteEngine on
+RewriteRule ^([a-z-A-Z-_-]+)$ /$1.php  [L]
+RewriteRule ^([a-z-A-Z-_-]+)/$ /$1.php  [L]
+RewriteRule ^book/([1-9-]+)$ /book.php?id=$1  [L]
+RewriteRule ^autor/([1-9-]+)$ /autor.php?id=$1  [L]

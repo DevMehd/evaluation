@@ -1,0 +1,38 @@
+form {
+    background-color: #E2E9C0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.input-general{
+    width: 16.66%;
+    height: 15px;
+    align-self: center;
+    padding: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    background: 
+    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size ease-in-out .35s;
+}
+.input-general:focus{
+    background-size: 0 0.1em, 100% 0.1em;
+    transition: background-size ease-in-out .35s;
+}
+
+.input-submit{
+    width: 9.99%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.input-submit:hover{
+    background-size: 0 0.1em, 100% 0.1em;
+    transition: background-size ease-in-out .35s;
+}
